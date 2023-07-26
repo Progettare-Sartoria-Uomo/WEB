@@ -1,0 +1,280 @@
+@font-face {
+    font-family: myfont;
+    src: url(./YesevaOne-Regular.ttf);
+}
+ol,
+ul {
+  padding-left: 0px !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tittle-p{
+    font-size: 40px;
+    color: white;
+    text-shadow: 5px 2px 2px black;
+    font-family: myfont;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Picture/que-trajes-de-hombre-estan-de-moda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    height: 24vh;
+    background: #ffffff;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.logo{
+    padding-left: 180px;
+    padding-right: 80px;
+    position: relative;
+}
+.logo2{
+    display: none;
+}
+.logo h1{
+    color: white;
+}
+.logo img{
+    width: 200px;
+}
+.nav-links li a{
+    color: #6a181b;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 3px;
+    margin: 0 25px;
+}
+.nav-links li a:hover{
+    text-decoration: underline;
+}
+.button1{
+    padding: 1px 25px;
+    margin-bottom: 20px;
+    background-color: rgb(173, 1, 1);
+    border: 1px solid rgb(173, 1, 1);
+    border-radius: 20px;
+}
+.store-title{
+    text-align: center;
+}
+.store-title h1{
+    font-size: 20px;
+}
+.landing{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing h1{
+    margin: 100px;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+  }
+  #loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #loader-wrapper .loader-section.section-left {
+    left: 0;
+  }
+  #loader-wrapper .loader-section.section-right {
+    right: 0;
+  }
+  #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+    z-index: 99999;
+  }
+  #loader img{
+    width: 114px;
+    text-align: center;
+  }
+  #loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+  }
+  #loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+  }
+  .loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 1.3s 2s ease-out;
+  }
+  .loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 0.7s 1.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 1.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.7s 1.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 1.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 1.7s ease-out;
+  }
+  .loaded #loader-wrapper {
+    visibility: hidden;
+    transform: translateY(-100%);
+  }
+  .loaded #loader {
+    opacity: 0;
+  }
+
+@media screen and (max-width: 768px) {
+    #loader img{
+        display: none;
+      }
+   .line{
+    width: 30px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    margin: 5px;
+   }
+   section {
+    background-position: center;
+    }
+   nav{
+    height: 14vh;
+    position: relative;
+   }
+   .logo{
+    padding: 0 80px;
+    position: relative;
+    } 
+   .hamburger2{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+   }
+
+   .nav-links{
+    position: fixed;
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+   }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li a{
+        color: #6a181b;
+    }
+    .landing{
+        flex-direction: column;
+    }
+    .landing img{
+        width: 300px;
+    }
+    .landing h1{
+        display: none;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .logo2{
+        display: block;
+        text-align: center;
+    }
+    .logo2 img{
+        margin-left: 20px;
+        width: 100px;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li a{
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade1{
+        opacity: 1;
+    }
+}
